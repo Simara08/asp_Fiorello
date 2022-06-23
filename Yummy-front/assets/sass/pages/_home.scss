@@ -1,0 +1,263 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-content: center;
+
+    span{
+        color: red;
+    }
+    a{
+        margin-left: 20px;
+        text-decoration: none;
+        transition: 0.5s;
+        color: rgb(111, 109, 109);
+        display: inline-block;
+
+        &:hover{
+            color: black;
+            text-decoration: underline;
+           
+        }
+    }
+    .nav-drop{
+        margin-top: 15px;
+    }
+    button{
+        margin-top: 15px;
+        background-color: rgb(226, 14, 14);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        width: 120px;
+        height: 40px;
+        transition: 0.5s;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    ul{
+        display: none;
+    }
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0%;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+header>span{
+    position: absolute;
+    right: 0%;
+    display: none;
+}
+@media only screen and (max-width:992px) {
+    .nav-drop{
+        display: none;
+    }
+    header>span{
+        display: block;
+    }
+}
+
+#enjoy-your{
+    background-color: rgb(211, 211, 211);
+    padding: 70px 0;
+    .food{
+         align-items: center;
+         display: flex;
+         justify-content: space-between;
+    }
+    .enjoy-summary{
+       
+
+        h2{
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
+            font-size: 42px;
+
+        }
+         button{
+        margin-top: 15px;
+        background-color: rgb(226, 14, 14);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        width: 120px;
+        height: 40px;
+        transition: 0.5s;
+        &:hover{
+            opacity: 0.8;
+            box-shadow: red;
+        }
+        
+    }
+    a{
+            color: black;
+            transition: 1s;
+            text-decoration: none;
+            margin-left: 10px;
+            &:hover{
+                color: red;
+            }
+        }
+        a>i{
+            color: red;
+            margin-right: 5px;
+            font-size: 25px;
+        }
+    }
+    .enjoy-img{
+        img{
+
+            width: 500px;
+            height: 500px;
+
+        }
+    }
+}
+#prodct{
+    margin-top: 70px;
+    text-align: center;
+    .product-img{
+        img{
+                width: 250px;
+                height: 250px;
+        }
+        span{
+            color: red;
+            font-size: 25px;
+        }
+    }
+    .product-summary{
+        h2{
+            
+           font-family: 'Amatic SC', cursive;
+           font-weight: 700;
+           font-size: 40px;
+        }
+       li{
+            list-style: none;
+            margin-left: 20px;
+            a{
+                color: rgb(136, 136, 136);
+                transition: 0.8s;
+                font-size: 20px;
+                &:hover{
+                    color: black;
+                }
+                
+            }
+       }
+       p{
+           margin: 0;
+       }
+       ul{
+           display: flex;
+           justify-content: center;
+       }
+       h3{
+           font-size: 42px;
+       }
+    }
+}
+
+#form-section{
+    text-align: center;
+    margin-top: 70px;
+    h3{
+        font-family: 'Amatic SC', cursive;
+        font-weight: 700;
+        font-size: 42px;
+    }
+    img{
+        width: 456px;
+        height: 520px;
+    }
+     button{
+        margin-top: 15px;
+        background-color: rgb(226, 14, 14);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        width: 180px;
+        height: 60px;
+        transition: 0.5s;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    form{
+        padding-top: 150px;
+    }
+    input{
+        width: 230px;
+        height: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+        margin-right: 0;
+        border-color: rgb(154, 153, 153);
+    }
+    .mes{
+        width: 725px;
+        height: 100px;
+    }
+
+}
+
+footer{
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    .footer-item{
+        margin-top: 30px;
+        display: flex;
+        i{
+            margin-right: 16px;
+        }
+    }
+    .footer-icon{
+        margin-top: 30px;
+    }
+}
